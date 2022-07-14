@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@400;800&family=Baloo+Bhaina+2&family=Chicle&family=Dancing+Script:wght@400;500&family=Federo&family=Gulzar&family=IM+Fell+English+SC&family=Recursive:wght@500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+.book{
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar navbar navbar';
+}
+#navbar{
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: linear-gradient(150deg,orange,white,green); */
+    background-color: white;
+    border: 0.5px solid black;
+    box-shadow:2px 2px 20px black;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#navbar ul li{
+    list-style: none;
+    padding-right: 40px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 35px;
+    color: blue;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#navbar ul li a:hover{
+    color: black;
+}
+.logo{
+    padding-left: 40px;
+}
+
+.slogan {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.slogan::before{
+    content: "";
+    background: url('/bg\ 2.jpg') no-repeat center center/cover;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.6;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 20px;
+}
+.content h1{
+    font-size: 60px;
+}
+.span1{
+    font-size: 45px;
+    color: green;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.span2{
+    font-size: 45px;
+    color: orange;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.button{
+     position: relative;
+    z-index: 6;
+    opacity: 100%;
+    left: 230px;
+    top: 470px;
+}
+.button a{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    border: 2px solid black;
+    background-color: rgb(140, 140, 234);
+    border-radius: 35px;
+    padding: 10px;
+}
+@media only screen and (max-width: 415px) {
+
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar ul{
+        justify-content: center;
+    }
+    .logo{
+        padding-left: 0px;
+    }
+    #navbar ul li{
+        padding-right: 0px;
+    }
+    #navbar ul li a{
+        padding: 0px 20px;
+        font-size: 40px;
+    }
+    .slogan {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        margin-left: 98px;
+        margin-top: 80px;
+    }
+    .slogan::before{
+        content: "";
+        background: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    .content h1{
+        font-size: 60px;
+    }
+    .span1{
+        font-size: 45px;
+        color: green;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    .span2{
+        font-size: 45px;
+        color: orange;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    body{
+        background: #a2d2ff;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 415px) and (max-width: 916px) {
+    #navbar{
+        flex-direction: column;
+    }S
+    #navbar ul{
+        justify-content: center;
+    }
+    .logo{
+        padding-left: 0px;
+    }
+    #navbar ul li{
+        padding-right: 0px;
+    }
+    #navbar ul li a{
+        padding: 0px 20px;
+        font-size: 40px;
+    }
+    .slogan {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 200px;
+    }
+    .slogan::before{
+        content: "";
+        background: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    .content h1{
+        font-size: 60px;
+    }
+    .span1{
+        font-size: 45px;
+        color: green;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    .span2{
+        font-size: 45px;
+        color: orange;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    body{
+        background: #a2d2ff;
+    }
+
+
+}

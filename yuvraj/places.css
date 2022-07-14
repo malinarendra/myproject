@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@400;800&family=Baloo+Bhaina+2&family=Chicle&family=Dancing+Script:wght@400;500&family=Federo&family=Gulzar&family=IM+Fell+English+SC&family=Recursive:wght@500;600&display=swap');
+* {
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'h h h h h ';
+}
+
+.header {
+    grid-area: h;
+    text-align: center;
+    background: linear-gradient(150deg, orange, white, green);
+    font-size: 70px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 70px;
+    z-index: 2;
+    font-family: 'Square Peg', cursive;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative; */
+    /* margin: 20px 136px; */
+    justify-content: center;
+    z-index: 1;
+}
+
+#img {
+    margin: 35px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#img img {
+    padding: 15px;
+    margin: 15px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 30px black;
+}
+
+#img img:hover {
+    box-shadow: 3px 3px 30px red;
+}
+
+
+.text {
+    text-align: center;
+    font-size: 30px;
+}
+
+.text a {
+    text-decoration: none;
+    color: #1f2163;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.text a:hover {
+    color: darkviolet;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    z-index: 2;
+    animation: narendra 3s ease infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes narendra {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+@media only screen and (max-width: 415px){
+    .header a {
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 916px){
+    .header a {
+        font-size: 35px;
+    }
+}
